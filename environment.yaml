@@ -1,0 +1,19 @@
+name: firescope
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - pytorch=1.13.0
+  - python=3.8
+  - torchvision
+  - torchinfo
+  - pandas
+  - matplotlib
+  - seaborn
+  - pathlib
+  - tqdm
+  - jupyterlab
+  - ipywidgets
+variables:
+  PYTORCH_ENABLE_MPS_FALLBACK: '1'
+prefix: /Users/benchen/miniconda3/envs/firescope
