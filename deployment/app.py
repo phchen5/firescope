@@ -52,7 +52,7 @@ st.write("""
          # 🔥 Forest Fire Detection
          """
          )
-st.write("This is an image classification web app that predicts whether or not nature images involves forest fire.")
+st.write("This is an image classification web app that predicts whether or not a nature image contains forest fire.")
 st.write("Note: The model that powers this app is trained using nature images. Therefore, the model may result in incorrect classifications for non-nature images.")
 file = st.file_uploader("Please upload an image file", type=["jpg", "png"])
 
@@ -65,12 +65,12 @@ else:
     label, probs = pred_and_plot_image(model_tl, file, auto_transforms, device)
     
     if label == 0:
-        st.write("### This is a fire image! 🔥")
+        st.markdown("<h1 style='text-align: center;'>Oh no! This is a fire image! 🔥</h1>", unsafe_allow_html=True)
     else:
-        st.write("### This is not a fire image!")
+        st.markdown("<h1 style='text-align: center;'>Phew! This is not a fire image! 😌</h1>", unsafe_allow_html=True)
     
     confidence = float(abs(probs - 0.5) * 2)
     formatted_confidence = '{:.2%}'.format(confidence)
 
-    st.write("### Confidence of Prediction: ", formatted_confidence)
+    st.write("Confidence of Prediction: ", formatted_confidence)
 
