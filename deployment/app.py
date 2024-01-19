@@ -81,7 +81,7 @@ else:
     formatted_confidence = '{:.2%}'.format(confidence)
     
     st.markdown(f"""
-                <div style='text-align: center; font-family: impact, sans-serif; font-size: 18px;'>
+                <div style='text-align: center; font-family: Georgia, serif; font-size: 18px;'>
                 Confidence of Prediction: {formatted_confidence}
                 </p>
                 """, unsafe_allow_html=True)
