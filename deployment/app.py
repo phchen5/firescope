@@ -66,13 +66,13 @@ else:
     
     if label == 0:
         st.markdown("""
-                    <div style='text-align: center; font-family: \"Garamond\", sans-serif; font-size: 24px;'>
+                    <div style='text-align: center; font-family: impact, sans-serif; font-size: 24px;'>
                     Oh no! This is a fire image! 🔥
                     </div>
                     """, unsafe_allow_html=True)
     else:
         st.markdown("""
-                    <div style='text-align: center; font-family: \"Garamond\", sans-serif; font-size: 24px;'>
+                    <div style='text-align: center; font-family: impact, sans-serif; font-size: 24px;'>
                     Phew! This is not a fire image! 😌
                     </div>
                     """, unsafe_allow_html=True)
