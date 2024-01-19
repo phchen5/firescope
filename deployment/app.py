@@ -79,6 +79,10 @@ else:
     
     confidence = float(abs(probs - 0.5) * 2)
     formatted_confidence = '{:.2%}'.format(confidence)
-
-    st.write("Confidence of Prediction: ", formatted_confidence)
+    
+    st.markdown(f"""
+                <div style='text-align: center; font-family: impact, sans-serif; font-size: 18px;'>
+                Confidence of Prediction: {formatted_confidence}
+                </p>
+                """, unsafe_allow_html=True)
 
