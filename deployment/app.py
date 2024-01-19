@@ -65,9 +65,17 @@ else:
     label, probs = pred_and_plot_image(model_tl, file, auto_transforms, device)
     
     if label == 0:
-        st.markdown("<h1 style='text-align: center;'>Oh no! This is a fire image! 🔥</h1>", unsafe_allow_html=True)
+        st.markdown("""
+                    <div style='text-align: center; font-family: \"Garamond\", sans-serif; font-size: 24px;'>
+                    Oh no! This is a fire image! 🔥
+                    </div>
+                    """, unsafe_allow_html=True)
     else:
-        st.markdown("<h1 style='text-align: center;'>Phew! This is not a fire image! 😌</h1>", unsafe_allow_html=True)
+        st.markdown("""
+                    <div style='text-align: center; font-family: \"Garamond\", sans-serif; font-size: 24px;'>
+                    Phew! This is not a fire image! 😌
+                    </div>
+                    """, unsafe_allow_html=True)
     
     confidence = float(abs(probs - 0.5) * 2)
     formatted_confidence = '{:.2%}'.format(confidence)
