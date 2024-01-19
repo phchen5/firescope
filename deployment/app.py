@@ -46,7 +46,7 @@ model_tl.classifier = torch.nn.Sequential(
     torch.nn.Linear(in_features=1024, out_features=1, bias=True)).to(device)
 
 # load weights from pth
-resume(model_tl, "best_model_tl.pth")
+resume(model_tl, "../deployment/best_model_tl.pth")
 
 st.write("""
          # Forest Fire Detection
