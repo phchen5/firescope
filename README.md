@@ -2,6 +2,8 @@
 
 In this project, we'll be building image classification models using CNN and transfer learning. The analysis can be accessed [here](analysis/firescope-cnn-and-tl-with-pytorch-98-acc.ipynb).
 
+The model is then deployed using Streamlit and you can try it out at [https://firescope.streamlit.app/](https://firescope.streamlit.app/).
+
 **Author**: Po-Hsun (Ben) Chen
 
 ## Summary
@@ -47,3 +49,9 @@ All required dependencies are listed in this [conda environment file](environmen
 
 - `analysis/firescope-cnn-and-tl-with-pytorch-98-acc.ipynb`: Jupyter notebook containing the EDA code.
 - `environment.yaml`: Conda environment file listing required dependencies.
+- `deployment/best_baseline_model.pth`: The saved model weights for the baseline CNN model.
+- `deployment/best_model_1.pth`: The saved model weights for the slightly more complicated CNN model.
+- `deployment/best_model_tl.pth`: The saved model weights for the model trained using transfer learning.
+- `deployment/app.py`: The app file for deployment on Streamlit.
+- `deployment/requirements.txt`: The file that contains the required dependencies for deployment on Streamlit.
+
