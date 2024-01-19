@@ -49,10 +49,11 @@ model_tl.classifier = torch.nn.Sequential(
 resume(model_tl, "deployment/best_model_tl.pth")
 
 st.write("""
-         # Forest Fire Detection
+         # 🔥 Forest Fire Detection
          """
          )
-st.write("This is an image classification web app to predict forest fire.")
+st.write("This is an image classification web app that predicts whether or not nature images involves forest fire.")
+st.write("Note: The model that powers this app is trained using nature images. Therefore, the model may result in incorrect classifications for non-nature images.")
 file = st.file_uploader("Please upload an image file", type=["jpg", "png"])
 
 if file is None:
