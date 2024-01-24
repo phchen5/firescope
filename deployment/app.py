@@ -15,7 +15,7 @@ def resume(model, filename):
 #define function to predict custom images
 def pred_and_plot_image(model, image_path, transform, device: torch.device=device):
     
-    img = Image.open(image_path)
+    img = Image.open(image_path).convert('RGB')
 
     image_transform = transform
 
