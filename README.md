@@ -32,6 +32,8 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
+![image](img/deployment.png)
+
 ## Dependencies
 
 All required dependencies are listed in this [conda environment file](environment.yaml).
