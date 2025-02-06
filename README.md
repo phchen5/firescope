@@ -2,8 +2,6 @@
 
 In this project, we'll be building image classification models using CNN and transfer learning. The analysis can be accessed [here](analysis/firescope-cnn-and-tl-with-pytorch-98-acc.ipynb).
 
-The model is then deployed using Streamlit and you can try it out at [https://firescope.streamlit.app/](https://firescope.streamlit.app/).
-
 **Author**: Po-Hsun (Ben) Chen
 
 ## Summary
@@ -13,6 +11,26 @@ In this project, we have a dataset that contains two types of images: fire image
 ## Data Source
 
 The dataset used in this analysis consists of 2 folders, each containing fire and non-fire images. In total, we have 755 outdoor fire images and 244 non-fire nature images. I've also gathered three random images from the internet to test the final capability of our model. The dataset is sourced from Kaggle and you can access the dataset [here](https://www.kaggle.com/datasets/phylake1337/fire-dataset). The three images sourced from the internet for testing the model can be accssed [here](https://www.kaggle.com/datasets/phchen5/custom-fire-images)
+
+## Deployment
+
+TThe model is deployed using Streamlit Cloud for easy access. You can try it out here: [FireScope on Streamlit](https://firescope.streamlit.app/).
+
+To scale the application and handle higher traffic, the model is also deployed on AWS ECS using Fargate. You can access the AWS deployment here: [FireScope on AWS ECS](http://3.143.210.210:8501/).
+
+To run the application on your local machine, follow these steps:
+
+1. Install the required packages:
+
+```bash
+pip install -r requirements.txt
+```
+
+2. Run the Streamlit app:
+
+```bash
+streamlit run app.py
+```
 
 ## Dependencies
 
