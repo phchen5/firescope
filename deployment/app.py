@@ -4,6 +4,7 @@ from torchvision import models
 
 from PIL import Image
 import streamlit as st
+import os
 
 
 device = torch.device("cpu")
@@ -46,7 +47,8 @@ model_tl.classifier = torch.nn.Sequential(
     torch.nn.Linear(in_features=1024, out_features=1, bias=True)).to(device)
 
 # load weights from pth
-resume(model_tl, "best_model_tl.pth")
+model_path = os.path.join(os.path.dirname(__file__), "best_model_tl.pth")
+resume(model_tl, model_path)
 
 st.write("""
          # 🔥 Forest Fire Detection
