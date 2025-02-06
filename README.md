@@ -14,7 +14,7 @@ The dataset used in this analysis consists of 2 folders, each containing fire an
 
 ## Deployment
 
-TThe model is deployed using Streamlit Cloud for easy access. You can try it out here: [FireScope on Streamlit](https://firescope.streamlit.app/).
+The model is deployed using Streamlit Cloud for easy access. You can try it out here: [FireScope on Streamlit](https://firescope.streamlit.app/).
 
 To scale the application and handle higher traffic, the model is also deployed on AWS ECS using Fargate. You can access the AWS deployment here: [FireScope on AWS ECS](http://3.143.210.210:8501/).
 
